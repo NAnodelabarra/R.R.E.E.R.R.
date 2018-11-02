@@ -4,9 +4,11 @@
 
 		/* Basic */
 
-	head
+	html
 	{
-		float: left;
+		width: 100%;
+		height: 100%;
+		clear: both;
 	}
 
 /* .card-1:hover {
@@ -19,6 +21,7 @@
 		float: left;
 		clear: both;
 		width: 100%;
+		height: 100%;
 		display: inline-block;
 		background: #e2e1e0;
 		font-family: 'Montserrat', sans-serif;
@@ -27,15 +30,21 @@
 	footer	
 	{
 		text-align: center;
-		margin: 1em 0;
-		padding: 0;
+		margin: 3em;
 		float: left;
+		position: fixed;
+		bottom: 0;
 		display: inline-block;
 		clear: both;
-		width: 100%;
+		width: calc(100% - 6em);
+		
 	}
 
-	input,textarea,select
+	footer > div	{
+		bottom: 0;
+	}
+
+	input, textarea, select
 	{
 		font-size: 13pt;
 	}
@@ -64,7 +73,7 @@
 	p
 	{
 		margin: 0;
-		padding: 1em;
+		padding: 0.5em;
 		font-size: 1em;
 		line-height: 1.25em;
 		letter-spacing: 0.02em;
@@ -105,9 +114,8 @@
 	}
 
 	div { 
+		
 	}
-
-
 	
 	header {   
 		
@@ -134,23 +142,25 @@
 
 
 	 .globo1, .globo2 {
-		
-		margin-top: 6em;
-		position: sticky;
+		 
+		position: fixed;
 		display:inline-block;
 		z-index: "1001";
-		background: #fff;
+		background: rgba(255,255,255,0.75);
 		border-bottom: solid 1px transparent;
 		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   		transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+		bottom: 3em;
 	}
 	.globo1
 	{
 		float: right;
+		right: 3em;
 	}
 	.globo2
 	{
 		float: left;
+		left: 3em;
 	}
 	.premiere
 	{
@@ -289,8 +299,8 @@
 
 	li {
 		list-style-type: none;
-		margin: 2em;
-		padding: 0em;
+		margin: 0em;
+		padding: 0 0.5em;
 	}
 
 /* Box */
